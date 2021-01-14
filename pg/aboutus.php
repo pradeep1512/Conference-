@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+
+		
+body{
+	background: #1E1F25;
+}
+
+.nav ul{
+	float: right;
+}
+
+.nav li{
+	display: inline;
+	padding: 1em 1em 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+	min-width: 80px;
+	margin: auto;
+}
+
+ul{
+float: ;
+}
+
+li{
+	display: inline;.nav ul{
+	float: right;
+}
+
+.nav li{
+	display: inline;
+	padding: 1em 1em 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+	min-width: 80px;
+	margin: auto;
+}
+	padding: ;
+  text-transform: uppercase;
+  cursor: pointer;
+	min-width: 80px;
+	margin-left: -0.5em;
+	margin-right: 0.5em;
+}
+li a{
+	text-decoration: none;
+	  color: #fff;
+
+}
+li:hover {
+  background-image: url("button.png");
+  background-size:cover;
+  color: #31616e;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0  #3d7787 ;
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+  .footer-menu-two li
+  {
+  		margin-top: -2em;
+  }
+}
+</style>
+	<title>About us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fontawesome.com/icons?d=gallery&s=brands">
+	<link rel="shortcut icon" type="image/jpeg" href="logo.jpeg">
+	<link rel="stylesheet" type="text/css" href="img.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<script src="https://kit.fontawesome.com/97f5fdf463.js"></script>
+</head>
+<body>
+
+	<div>	
+		<nav class="nav" style="float: right;width: 100% ;line-height: 3em;z-index: 100;margin: 0em 2em 2em 2em;height: 5em;" >
+			<img src="logo.jpeg" style="height: 100px;width: 100px;float: left;margin:0px 0px 0px 80px ;border-radius: 50px;border-style: solid;border-color: #a0bda8;">
+			<ul style="margin-top: 30px;">	
+				<li><a href="final.html" >home</a></li>
+				<li><a href="gallery.php">gallery</a></li>
+				<li><a href="Manager.html">Manager</a></li>
+				<li><a href="reg.html">Registration</a></li>
+				<li><a href="aboutus.html">About us</a></li>
+			</ul>
+		</nav>
+	</div>
+<a id="top"></a>
+<h2 style="color: #fff">A Conference Management System</h2>
+<p style="font-size: 18px;color: #fff;"><br>
+	Confomatch is a Website designed to connect reseachers to conferences where they can present their research papers to an audience who are interested to confer and learn about a topic.
+
+Each conference usually has one keynote speaker presenting his/her paper to an audience who wish to learn about the topic. 
+We help program chairs, conference organisers, paper authors and reviewers organize their activities and manage their conference efficiently so that a smooth and successful conference takes place where learning isn't hindered by sloppy execution.
+
+Our conferences are held all across Mumbai and we are committed to connect you with the conference closest to you which meets all your needs. You can learn more about the various successful past conferences we've had and get timely updates about upcoming interesting conferences by following us on our Facebook, Instagram and Snapchat pages.
+</p>
+
+<button type="button" onclick="loadXMLDoc()" >Confomatch </button>
+<br><br>
+<table id="demo" style="text-align=center;color:#fff;font-size:20px;"></table>
+
+<script>
+	
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Artist</th><th>Title</th><th>Address</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("DESIGNATION")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+     x[i].getElementsByTagName("ADDRESS")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+
+<!--- XML starts from here --->
+
+
+<!--- Footer start from here --->
+
+<a href="#top" style="float: right;margin-right: 10px;"><button style="font-size: 25px;"> ⬆ </button></a>
+
+
+<div class="footer-main-div" style="display: flex;flex-direction: column;justify-content: center;align-items: center; ">
+	
+	
+	<div class="footer-social-icons">
+			<ul>
+				<li style="background:blue"><a href="https://www.facebook.com/rsaconference/" target="blank"><i class="fab fa-facebook-f" style="font-size: 30px;color: #fff"></i></i></a></li>
+				<li style="background: #ca0949 "><a href="https://www.instagram.com/explore/tags/conference/" target="blank"><i class="fab fa-instagram" style="font-size: 30px; color: #fff"></i></a></li>
+				<li style="background:#1da1f2"><a href="https://twitter.com/hashtag/conference?lang=en" target="blank"><i class="fab fa-twitter" style="font-size: 30px; color: #fff"></i></a></li>
+				<li style="background:#f4f711"><a href="https://www.cru.org/us/en/digitalministry/training/snapchat/snapchat-for-conferences.html" target="blank"><i class="fab fa-snapchat-ghost" style="font-size: 30px;color: #fff"></i></a></li>			
+			</ul>		
+		</div>
+
+	<div class="footer-menu-one">
+			<ul>
+				<li style=" margin-left:1em;margin-right: -1.5em;"><a href="final.php">Home</a></li>
+				<li><a href="aboutus.html">About us</a></li>
+				<li style=" margin-left:-1em;margin-right: -1em; "><a href="">Location</a></li>
+				<li ><a href="">Contact us</a></li>
+			</ul>
+	</div>
+
+	<div class="footer-menu-two" >			
+			<ul>
+				<li style=" margin-left:1em;margin-right: -1.5em;"><a href="https://www.kotobee.com/blog/writers-conferences-2019/">blog</a></li>
+				<li style=" margin-left:1em;margin-right: -1.5em;"><a href="gallery.php">Gallery</a></li>
+				<li style=" margin-left:1em;margin-right: -1.5em;"><a href="https://events.wan-ifra.org/events/world-news-media-congress-2019">News</a></li>
+				<li style=" margin-left:1em;margin-right: -1.5em;"><a href="https://www.warc.com/EventReports">Media</a></li>
+			</ul>	
+	</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60282.51047264098!2d72.83699098670486!3d19.210182151554278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b13affffffff%3A0xfd071f1d3a7844ef!2sSt.%20Francis%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1568816775142!5m2!1sen!2sin" width="50%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	
+</div>	
+
+
+
+<div class="footer-bottom">
+		<center><span style="color:#fff;">© Copyright Confomatch 2019 </span></center>
+		<center><span style="color: #fff;">Design by<a href="">Group Of Confomatch</a></span></center>
+</div>
+
+</body>
+</html>

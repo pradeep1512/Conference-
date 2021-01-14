@@ -1,0 +1,89 @@
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.bgimage{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(conference3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	font-family: Times New Roman;
+	-webkit-filter: blur(3px);
+  	filter: blur(3px);
+}
+
+.loginbox form{
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	background: white;
+	font-family: Times New Roman;
+	font-size:150%;
+	font-weight: bold;
+	text-align:left;
+	color: orange;
+	padding:30px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50px;
+}
+
+.loginbox .avatar{			
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+.loginbox input[type=text],input[type=password]{
+	border: none;
+	outline: none;
+	background: transparent;
+	height: 40px;
+	width: 100%;
+	color: black;
+	font-size: 60%;
+	border-bottom: 2px solid orange;
+}
+
+.loginbox input[type=submit]{
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 60%;
+	color: white;
+	background-color: orange;
+	font-weight: bold;
+	font-size: 100%;
+	border-radius: 20px;
+	font-family:Calibri;
+}
+
+
+.loginbox input[type=submit]:hover{
+	cursor: pointer;
+	background-color: greenyellow;
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 60%;
+	line-height: 12px;
+	color: dodgerblue;
+}
+
+.loginbox a:hover{
+	color: red;
+}

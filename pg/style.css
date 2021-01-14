@@ -1,0 +1,233 @@
+ *{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+.footer-main-div{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: #272727;
+	padding: 20px 0px;
+}
+
+.footer-social-icons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+.footer-social-icons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social-icons ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #32CD32;
+}
+.footer-social-icons ul li a{
+	color: #272727
+	font-size:25px;
+	display: block;
+}
+
+.footer-social-icons ul li a i{
+	line-height: 50px
+}
+.footer-social-icons ul li:hover{
+	background: #f00;
+	
+}
+.footer-social-icons ul li:hover a{
+	color: #fff;
+}
+.footer-menu-one{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+	float: center;
+}
+.footer-menu-one ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-menu-one ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+.footer-menu-one ul li a{
+	font-family: arial;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer-menu-two{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+	
+}
+.footer-menu-two ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-menu-two ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+.footer-menu-two ul li a{
+	font-family: arial;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer-menu-two ul li a:hover{
+	color: #272727;
+}
+.footer-bottom{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: ;
+	padding: 5px;
+}
+.footer-bottom p{
+	font-family: arial;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.footer-bottom p a{
+	color: #fff;
+}
+.footer-bottom p a:hover{
+	color:;
+}
+h2
+{
+	color: #fff;
+}
+/*slider css*/
+.slider {
+		height: 500px;
+		width: 100%;
+
+		background-color: gray;
+		overflow: hidden;
+		padding-top: 0px 0px;
+
+	}
+
+	.sliderchild {
+		height: 500px;
+		width: 500%;
+		background-color: green;
+		/* short-hand : animation: name iteration-count duration delay*/
+		animation: slider infinite 20s 2s;
+	}
+
+	.imagecon {
+		height: 500px;
+		display: block;
+		/* we are using width 20% cause we have 5 images*/
+		width: 20%;
+		float:left;
+		margin: 0px 0px;
+	}
+
+	.imagecon p {
+		line-height: 35px;
+		text-align: left;
+		font-size: 2em;
+		color:#fff;
+		font-weight: 700;
+		transform: translateX(3%);
+		padding-top: 425px;
+
+
+	}
+
+	.imagecon:nth-child(1){
+		background-image: url('conference.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.imagecon:nth-child(2){
+		background-image: url('conference2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.imagecon:nth-child(3){
+		background-image: url('con2.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+	.imagecon:nth-child(4){
+		background-image: url('con4.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/*first and last image is same - cause in a css animation ends it starts again with the same first image*/
+	.imagecon:nth-child(5){
+		background-image: url('con6.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	@keyframes slider {
+		12.5% {
+			/*since the slider is 500%, we use -100% to shift one image*/
+			margin-left: -100%;
+
+		}	
+
+		25% {
+			margin-left: -100%;
+		}  
+
+		37.5% {
+			margin-left: -200%;
+		}
+
+		50% {
+			margin-left: -200%;
+		}
+
+		62.5% {
+			margin-left: -300%;
+		}
+		75% {
+			margin-left: -300%;
+		}
+		87.5% {
+			margin-left: -400%;
+		}		
+		100% {
+			margin-left: -400%;	
+		}
+	}

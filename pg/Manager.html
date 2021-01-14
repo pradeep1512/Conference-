@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>MANAGER SIGNIN</title>
+			<link rel="stylesheet" type="text/css" href="style1.css">
+			<link rel="shortcut icon" type="image/jpeg" href="logo.jpeg">
+
+			<script type="text/javascript">
+
+		function validate()
+		{
+		
+
+		var Username = document.getElementById('uname').value;
+		var password = document.getElementById('pwd').value;
+
+		if (Username==''){
+			document.getElementById("username").innerHTML ="All fields are required";
+			return false;
+		}
+		else if(uname.length<4){
+			document.getElementById("eresult").innerHTML ="must grater than 4 characters";
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+
+		
+		
+	}
+	</script>
+		</head>
+		<body>
+			<div class="bgimage"></div>
+
+				<div class="loginbox">
+				
+				<form action="EDIT.html" method="POST" onsubmit="return validate()" name="vform">
+
+				
+				<img src="avatar1.jpg" class="avatar">
+				<h3 style="text-decoration:underline" align="center">SIGNIN</h3>
+
+				<div class="f-g">
+				Username
+				<br>
+				<input type="text" id="uname" placeholder="Username" class="f-control" autocomplete="off"  style="width:180px" required="">	
+				<span id="username" class="text-danger font-weight-bold"></span>						
+				<br>
+				<br>
+			   </div>
+
+			   <div class="f-g">
+				Password
+				<br>
+				<input type="password" id="pwd" placeholder="Password" class="f-control" autocomplete="off" fr style="width: 180px" required="">
+				<br>
+				<br>
+				</div>
+
+				<center>
+					<input type="submit" name="submit" id="submit" value="Login">
+				</center>	
+	</form>
+</div>
+
+
+		</body>
+	</html>

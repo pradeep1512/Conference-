@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION</title>
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+			padding: 0;
+			background-image: url(background1.jpg);
+			background-size: 100% 100%;
+
+		}
+
+		.title{
+			text-align: center;
+			padding: 50px 0 20px;
+		}
+
+		.title h1{
+			margin: 0;
+			padding: 0;
+			color: deeppink;
+			font-family: Calibri;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px orchid;
+			font-weight: bold;
+		}
+
+		.container{
+			width: 60%;
+			height: 700px;
+			background: #fff;
+			margin: 0 auto;
+			border: 2px solid white;
+			box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+		}
+
+		.container .left{
+			float: left;
+			width: 50%;
+			height: 700px;
+			background: url(conference2.jpg);
+			background-size: 100% 100%;
+			box-sizing: border-box;
+		}
+
+		.container .right{
+			float: right;
+			width: 50%;
+			height:700px;
+			box-sizing: border-box;
+		}
+
+		.formbox{
+			width: 100%;
+			padding: 80px 40px;
+			height: 700px;
+			box-sizing: border-box;
+			background: white;
+			color: darkmagenta;
+			font-weight: bold;
+			font-size: 90%;
+			font-family: times new roman;
+		}
+
+		.formbox input{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		.formbox input[type=text],
+		.formbox input[type=password]{
+			border: none;
+			outline: none;
+			border-bottom: 2px solid plum;
+			height: 20px;
+			font-size: 75%;
+			color: 
+
+		}
+
+		.formbox input[type=text]:focus,
+		.formbox input[type=password]:focus
+		{
+			border-bottom: 2px solid purple;
+		}
+
+		.formbox input[type=checkbox]{
+			color: gray;
+			font-size: 60%;
+		}
+
+		.formbox input[type=button]{
+			border: none;
+			outline: none;
+			width: 100%;
+			height: 60%;
+			color: white;
+			background-color: deepskyblue;
+			font-weight: bold;
+			font-size: 100%;
+			border-radius: 20px;
+			font-family:Calibri;
+		}
+
+		.formbox input[type=button]:hover{
+			cursor: pointer;
+			background-color: greenyellow;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+		<div class="title"><h1>CONFERENCE REGISTRATION</h1></div>
+		<div class="container">
+			<div class="left"></div>
+			<div class="right">
+				<div class="formbox">
+					<form>
+						 Pid
+						<br>
+						<input type="number" id="pid" placeholder="Pid">
+						<br>
+						<br>
+						First Name
+						<br>
+						<input type="text" id="fname" placeholder="First Name">
+						<br>
+						<br>
+						Last Name
+						<br>
+						<input type="text" id="lname" placeholder="Last Name">
+						<br>
+						<br>
+						Email
+						<br>
+						<input type="text" id="email" placeholder="Email">
+						<br>
+						<br>
+						Topic
+						<br>
+						<input type="text" id="topic" placeholder="Topic">
+						<br>
+						<br>
+						Username
+						<br>
+						<input type="text" id="uname" placeholder="Username">
+						<br>
+						<br>
+						Password
+						<br>
+						<input type="password" id="pwd" placeholder="Password">
+						<br>
+						<br>
+						Confirm Password
+						<br>
+						<input type="password" id="cpwd" placeholder="Password">
+						<br>
+						<br>
+						
+						<center>
+							<input type="button" id="button" value="SUBMIT">
+						</center>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+<!--- dataentering --->	
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<WDL>
+	<CD>
+		<NAME>Pradeep</NAME>
+		<DESIGNATION>CEO</DESIGNATION>
+		<COUNTRY>India</COUNTRY>
+		<COMPANY>Confomatch</COMPANY>
+		<ADDRESS>Borivali</ADDRESS>
+		<YEAR>2005</YEAR>
+	</CD>
+	<CD>
+		<NAME>Janhavi</NAME>
+		<DESIGNATION>Employee</DESIGNATION>
+		<COUNTRY>India</COUNTRY>
+		<COMPANY>Confomatch</COMPANY>
+		<ADDRESS>Dahisar</ADDRESS>
+		<YEAR>2008</YEAR>
+	</CD>
+	<CD>
+		<NAME>Ryan</NAME>
+		<DESIGNATION>Manager</DESIGNATION>
+		<COUNTRY>India</COUNTRY>
+		<COMPANY>Confomatch</COMPANY>
+		<ADDRESS>Dadar</ADDRESS>
+		<YEAR>2007</YEAR>
+	</CD>
+</WDL>
